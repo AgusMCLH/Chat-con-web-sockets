@@ -1,0 +1,49 @@
+html,body{
+    width: 100%;
+    height: 98%;
+    display: flex;
+}
+#msg__container{
+    align-self: center;
+    justify-self: flex-end;
+    width: 98%;
+    overflow: hidden;
+}
+#msg{
+    width: 98%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+#container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+#title{
+    justify-self: center;
+    align-self: center;
+}
+#history{
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid green;
+    padding: 10px;
+    flex-grow: 1;
+    align-self: center;
+
+}
+.message-text{
+    font-style: italic;
+    margin-left: 10px;
+}
+.user{
+    font-weight: bold;
+    font-size: 20px;
+}
