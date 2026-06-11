@@ -21,6 +21,10 @@ const webServer = app.listen(8080, () => {
 });
 
 const io = new Server(webServer);
+setInterval(() => {
+  messages = [];
+  io.emit('messages', messages);
+}, 120000);
 
 // Eventos de socket.io
 io.on('connection', (socket) => {
